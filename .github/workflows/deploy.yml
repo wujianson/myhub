@@ -23,9 +23,3 @@ jobs:
             npm install
             npm run build
           fi
-
-      - name: Deploy to GitHub Pages
-        uses: actions/github-pages-deploy-action@v4
-        with:
-          branch: gh-pages       # The branch where the site will be deployed
-          folder: '.'            # Adjust if your built site is in a subfolder

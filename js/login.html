@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Login</h1>
-    <form action="#" method="post">
+    <form id="loginForm" action="#" method="post">
         <label for="username">Username:</label>
         <input type="text" id="username" name="username" required>
         <br>
@@ -17,5 +17,14 @@
         <br>
         <button type="submit">Submit</button>
     </form>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // Simulated login success - add real validation as needed
+            alert("Login successful!");
+            window.location.href = "dashboard.html"; // Redirect after successful login
+        });
+    </script>
 </body>
 </html>
